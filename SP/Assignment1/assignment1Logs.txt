@@ -1,0 +1,102 @@
+Script started on 2022-01-27 14:25:26+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;sv4@VaRiyA: ~[01;32msv4@VaRiyA[00m:[01;34m~[00m$ mkdir Assignment1
+]0;sv4@VaRiyA: ~[01;32msv4@VaRiyA[00m:[01;34m~[00m$ cd Assignment1/
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ e[K[H[2J]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ echo "Hello abc" >> abc.sh[C
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ cat abs[Kc.sh 
+Hello abc
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l
+total 4
+-rw-rw-r-- 1 sv4 sv4 10 Jan 27 14:26 abc.sh
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ chmod a[K755 abc.sh 
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ chmod 755 abc.sh ls -l[K
+total 4
+-rwxr-xr-x 1 sv4 sv4 10 Jan 27 14:26 [0m[01;32mabc.sh[0m
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ [H[2J]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ echo ""O"S":" "[C lsb_release -a[1P[1@\[1@n
+OS:\n lsb_release -a
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ [H[2J]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ echo "OS:\n" lsb_release -a[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.3 LTS
+Release:	20.04
+Codename:	focal
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ uname -r
+5.13.0-27-generic
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ [H[2J]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ gedit in1,[K.txt
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ cat in1.txt 
+This is input file 1
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ gedit in2,[K.txt
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ gedit in2.txt[1Pcat in1.txt [1P[1@2
+This is input file 2
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ mkdir[K[K[K[K[Kcd ~
+]0;sv4@VaRiyA: ~[01;32msv4@VaRiyA[00m:[01;34m~[00m$ mkdir MyOut
+]0;sv4@VaRiyA: ~[01;32msv4@VaRiyA[00m:[01;34m~[00m$ cat[K[K[Kcd My[K[K[K[K[Kcd MyOut/
+]0;sv4@VaRiyA: ~/MyOut[01;32msv4@VaRiyA[00m:[01;34m~/MyOut[00m$ cat in[K[K[K ../Assignment1/in1.txt in2[K[K[K../Assignment1/in2.txt > out.txt
+]0;sv4@VaRiyA: ~/MyOut[01;32msv4@VaRiyA[00m:[01;34m~/MyOut[00m$ cat out.txt
+This is input file 1
+This is input file 2
+]0;sv4@VaRiyA: ~/MyOut[01;32msv4@VaRiyA[00m:[01;34m~/MyOut[00m$ [H[2J]0;sv4@VaRiyA: ~/MyOut[01;32msv4@VaRiyA[00m:[01;34m~/MyOut[00m$ grep in[K[K"input file"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ~
+]0;sv4@VaRiyA: ~[01;32msv4@VaRiyA[00m:[01;34m~[00m$ cd Assignment1/
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ [H[2J]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ grep "input file" in1.txt in2.txt ../MyOut/out.txt 
+[35m[Kin1.txt[m[K[36m[K:[m[KThis is [01;31m[Kinput file[m[K 1
+[35m[Kin2.txt[m[K[36m[K:[m[KThis is [01;31m[Kinput file[m[K 2
+[35m[K../MyOut/out.txt[m[K[36m[K:[m[KThis is [01;31m[Kinput file[m[K 1
+[35m[K../MyOut/out.txt[m[K[36m[K:[m[KThis is [01;31m[Kinput file[m[K 2
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ [H[2J]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", 
+ sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}' 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'
+awk: line 1: extra '}'
+awk: line 1: syntax error at or near END
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ [H[2J]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk 'sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}' 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C{sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}'[A
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+[K[A]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ ls -l | awk '{sum+=$5} END {printf("Total: %0.6f MB\n", sum/1024/1024)}' [A
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Total: 0.000050 MB
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ date | cut -d " [K' [K[K[K' ' -f 5 6 7
+cut: 6: No such file or directory
+cut: 7: No such file or directory
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ [H[2J]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ date | cut -d ' ' -f 5 6 7[1P7[1P7[1P7,767,7
+02:46:29 PM IST
+]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 3~[K[K
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ 
+[K]0;sv4@VaRiyA: ~/Assignment1[01;32msv4@VaRiyA[00m:[01;34m~/Assignment1[00m$ exit
+exit
+
+Script done on 2022-01-27 14:49:53+05:30 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>(WP) Assignment 1 -> Q2</title>
+    </head>
+
+    <style>
+        body {
+            background-color: lightgrey;
+            margin: 20px;
+        }
+
+        h3 {
+            margin: 20px 0px 5px;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: green;
+            height: 48px;
+        }
+
+        /* Individual Styling to All Rows Starts from Here */
+
+        .flex-container1 .red,
+        .flex-container3 .red,
+        .flex-container4 .red,
+        .flex-container5 .red,
+        .flex-container6 .red,
+        .flex-container7 .red {
+            background-color: red;
+        }
+
+        .flex-container1 .blue,
+        .flex-container2 .blue,
+        .flex-container3 .blue,
+        .flex-container4 .blue,
+        .flex-container6 .blue,
+        .flex-container7-right .blue {
+            background-color: blue;
+        }
+
+        .flex-container8 .orange,
+        .flex-container9 .orange {
+            background-color: orange;
+        }
+
+        .flex-container1 .red,
+        .flex-container1 .blue,
+        .flex-container4 .red,
+        .flex-container6 .red,
+        .flex-container9 .orange {
+            flex-grow: 1;
+        }
+
+        .flex-container2 .blue,
+        .flex-container3 .red,
+        .flex-container3 .blue,
+        .flex-container4 .blue,
+        .flex-container6 .blue,
+        .flex-container7 .red,
+        .flex-container8 .orange {
+            width: 80px;
+        }
+
+        .flex-container2 {
+            flex-direction: row-reverse;
+        }
+
+        .flex-container3,
+        .flex-container7-right,
+        .flex-container8,
+        .flex-container9 {
+            justify-content: space-between;
+        }
+
+        .flex-container5 {
+            justify-content: space-around;
+        }
+
+        .flex-container5 .red {
+            width: 30px;
+            height: 30px;
+            align-self: center;
+        }
+
+        .flex-container7-right {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .flex-container7-right .blue {
+            height: calc(100% / 3);
+        }
+
+        .flex-container9 {
+            gap: 20px;
+        }
+
+        /* End Of CSS */
+
+    </style>
+
+    <body>
+
+        <h3>Row 1</h3>
+        <div class="flex-container flex-container1">
+            <div class="red"></div>
+            <div class="blue"></div>
+        </div>
+
+        <h3>Row 2</h3>
+        <div class="flex-container flex-container2">
+            <div class="blue"></div>
+        </div>
+
+        <h3>Row 3</h3>
+        <div class="flex-container flex-container3">
+            <div class="red"></div>
+            <div class="blue"></div>
+        </div>
+
+        <h3>Row 4</h3>
+        <div class="flex-container flex-container4">
+            <div class="red"></div>
+            <div class="blue"></div>
+        </div>
+
+        <h3>Row 5</h3>
+        <div class="flex-container flex-container5">
+            <div class="red"></div>
+        </div>
+
+        <h3>Row 6</h3>
+        <div class="flex-container flex-container6">
+            <div class="red"></div>
+            <div class="blue"></div>
+            <div class="red"></div>
+        </div>
+
+        <h3>Row 7</h3>
+        <div class="flex-container flex-container7">
+            <div class="red"></div>
+            <div class="flex-container7-right">
+                <div class="blue"></div>
+                <div class="blue"></div>
+            </div>
+        </div>
+
+        <h3>Row 8</h3>
+        <div class="flex-container flex-container8">
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+        </div>
+
+        <h3>Row 9</h3>
+        <div class="flex-container flex-container9">
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+        </div>
+
+    </body>
+
+</html>
