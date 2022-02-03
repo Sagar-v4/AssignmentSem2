@@ -1,0 +1,293 @@
+Script started on 2022-02-03 15:12:24+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="82" LINES="33"]
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ gedit q1.sh 
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ cat q1.sh 
+sum=0
+
+for i in $@
+do sum=$((sum+i));
+done
+
+echo "Sum of all command line integer arguments: $sum"
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ sh q1 [K.sh  [K2 3 5 7 11 13 17
+Sum of all command line integer arguments: 58
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ gedit q2.sh 
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ cat q2.sh 
+echo "Enter number to find its factorial: "
+read num
+
+n=$num
+fact=1
+
+fact() {
+	while [ $n -gt 1 ]
+	do
+		fact=$((fact * n))
+		n=$((n - 1))
+	done
+	
+	echo "Factorial of $num is: $fact"
+}
+
+fact
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ sh q2.sh 
+Enter number to find its factorial: 
+5
+Factorial of 5 is: 120
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ gedit q3.sh 
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ cat q3.sh 
+echo "Enter day(Week starts from monday): "
+read n
+
+case $n in
+	
+	1) echo "Monday" ;;
+	2) echo "Tuesday" ;;
+	3) echo "Wednesday" ;;
+	4) echo "Thusrday" ;;
+	5) echo "Friday" ;;
+	6) echo "Saturday" ;;
+	7) echo "Sunday" ;;
+	*) echo "Invalid day.. day should between 1 to 7" ;;
+	
+esac
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ sh q3.sh 
+Enter day(Week starts from monday): 
+4
+Thusrday
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ sh q3.sh 
+Enter day(Week starts from monday): 
+9
+Invalid day.. day should between 1 to 7
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ gedit q4.sh 
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ cat q4.sh 
+FILE1=/etc/passwd
+FILE2=/usr/local/lib
+FILE3=/Quiz_2
+
+if test -f "$FILE1";
+then
+	echo "$FILE1 -> its exists as file."
+elif test -d "$FILE1";
+then
+	echo "$FILE1 -> its exist as directory."
+else
+        echo "$FILE1 -> does not exists."
+fi
+
+if test -f "$FILE2";
+then
+	echo "$FILE2 -> its exists as file."
+elif test -d "$FILE2";
+then
+	echo "$FILE2 -> its exist as directory."
+else
+        echo "$FILE2 -> does not exists."
+fi
+
+if test -f "$FILE3";
+then
+	echo "$FILE3 -> its exists as file."
+elif test -d "$FILE3";
+then
+	echo "$FILE3 -> its exist as directory."
+else
+        echo "$FILE3 -> does not exists."
+fi
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ sh q4.sh 
+/etc/passwd -> its exists as file.
+/usr/local/lib -> its exist as directory.
+/Quiz_2 -> does not exists.
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ [K]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ gedit q5.sh 
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ cat q5.sh 
+cd /var/log
+sudo
+
+for i in ls
+do
+	grep warning * >> /home/sv4/Quiz_1/warnings.log
+done
+
+cat /home/sv4/Quiz_1/warnings.log
+]0;sv4@VaRiyA: ~/Quiz_1[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_1[00m$ sudo sh q5.sh 
+[sudo] password for sv4: 
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout]
+            [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout]
+            [-u user] file ...
+grep: apt: Is a directory
+grep: cups: Is a directory
+grep: dist-upgrade: Is a directory
+grep: gdm3: Is a directory
+grep: hp: Is a directory
+grep: installer: Is a directory
+grep: journal: Is a directory
+grep: openvpn: Is a directory
+grep: private: Is a directory
+grep: speech-dispatcher: Is a directory
+grep: unattended-upgrades: Is a directory
+auth.log:Feb  3 13:49:52 VaRiyA sudo:      sv4 : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/rm warnings.log
+auth.log:Feb  3 13:51:01 VaRiyA sudo:      sv4 : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/rm warnings.log
+auth.log:Feb  3 13:58:28 VaRiyA sudo:      sv4 : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/rm warnings.log
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 5 package 'dpkg':
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 5 package 'dpkg':
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 24 package 'dpkg':
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 24 package 'dpkg':
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 60 package 'dpkg':
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 60 package 'dpkg':
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+Binary file kern.log.1 matches
+syslog:Feb  3 09:48:11 VaRiyA /usr/lib/gdm3/gdm-x-session[1463]: #011(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 09:55:25 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 09:59:06 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:00:19 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:01:20 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:03:02 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:04:02 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:08:09 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:09:24 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:11:22 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:12:33 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:13:23 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 10:18:21 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 11:47:14 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 11:52:15 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 11:53:58 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x3002fee
+syslog:Feb  3 11:54:20 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 11:57:46 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x3004da5
+syslog:Feb  3 12:02:39 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x3004da5
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 13:32:14 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x34000f8
+syslog:Feb  3 14:00:44 VaRiyA gnome-shell[1666]: Window manager warning: Buggy c

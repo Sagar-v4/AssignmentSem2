@@ -1,0 +1,173 @@
+auth.log:Feb  3 13:49:52 VaRiyA sudo:      sv4 : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/rm warnings.log
+auth.log:Feb  3 13:51:01 VaRiyA sudo:      sv4 : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/rm warnings.log
+auth.log:Feb  3 13:58:28 VaRiyA sudo:      sv4 : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/rm warnings.log
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 5 package 'dpkg':
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 5 package 'dpkg':
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 24 package 'dpkg':
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 24 package 'dpkg':
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 60 package 'dpkg':
+bootstrap.log:dpkg: warning: parsing file '/var/lib/dpkg/status' near line 60 package 'dpkg':
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+bootstrap.log:dpkg: warning: ignoring pre-dependency problem!
+Binary file kern.log.1 matches
+syslog:Feb  3 09:48:11 VaRiyA /usr/lib/gdm3/gdm-x-session[1463]: #011(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 09:48:22 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 09:48:33 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 09:49:01 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 09:55:25 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 09:59:06 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:00:19 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:01:20 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:03:02 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:04:02 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:08:09 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:09:24 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:11:22 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:12:33 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:13:23 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 10:14:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 10:14:53 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 10:18:21 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 11:08:36 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 11:47:14 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 11:52:15 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 11:53:58 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x3002fee
+syslog:Feb  3 11:54:20 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x30000f8
+syslog:Feb  3 11:57:46 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x3004da5
+syslog:Feb  3 12:02:39 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x3004da5
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 12:05:55 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+syslog:Feb  3 13:29:23 VaRiyA gnome-shell[1666]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+syslog:Feb  3 13:32:14 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x34000f8
+syslog:Feb  3 14:00:44 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x34000f8
+syslog:Feb  3 14:02:31 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x34000f8
+syslog:Feb  3 14:11:55 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x34000f8
+syslog:Feb  3 14:22:37 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x34013ea
+syslog:Feb  3 14:28:09 VaRiyA gnome-shell[1666]: message repeated 8 times: [ Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x34013ea]
+syslog:Feb  3 15:08:05 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x34000f8
+syslog:Feb  3 15:10:33 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x34000f8
+syslog:Feb  3 15:12:38 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x32000f8
+syslog:Feb  3 15:16:26 VaRiyA gnome-shell[1666]: message repeated 3 times: [ Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x32000f8]
+syslog:Feb  3 15:17:46 VaRiyA gnome-shell[1666]: Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x32000f8
+Binary file syslog.1 matches
