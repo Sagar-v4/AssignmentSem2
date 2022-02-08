@@ -77,8 +77,5 @@ class Q1 {
 
         car.description();
 
-
-
-
     }
 }
