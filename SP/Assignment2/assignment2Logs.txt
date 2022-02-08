@@ -1,0 +1,205 @@
+Script started on 2022-02-08 20:03:00+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="110" LINES="35"]
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ [H[2J]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ gedit 202112114_Lab2_1.sh 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat 202112114_Lab2_1.sh 
+#!/bin/bash
+
+sum=0
+count=0
+
+for i in "$@"
+do
+	if [ $count -lt 9 ]
+	then
+		sum=`expr $sum + $i`
+		count=`expr $count + 1`
+	else
+		break
+	fi
+done
+	
+echo "Sum (up to 9) command line integer arguments[$count]: $sum"
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_1.sh 123[K[K 2 3[K[K[K[K[K[K
+Sum (up to 9) command line integer arguments[0]: 0
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_1.sh 1 2 3 4 5
+Sum (up to 9) command line integer arguments[5]: 15
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_1.sh 1 2 3 4 5 6 7 8 9
+Sum (up to 9) command line integer arguments[9]: 45
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_1.sh 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+Sum (up to 9) command line integer arguments[9]: 45
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ [H[2J]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ gedit 202112114_Lab2_2.sh 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat 202112114_Lab2_2.sh 
+#!/bin/bash
+
+if ! [ -d $1 ]
+then
+	echo "$1 -> Directory Doesn't exists..."
+
+else
+	files=`ls -R $1|find $1 -type d`
+	
+	for file in $files
+	do
+		count=0
+		if [ -d $file ]
+		then
+			count=`ls $file|find $file -type f|wc -l`
+			echo "$file -> Files count: $count"
+		fi
+	done
+fi
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_2.sh testingFolder/[K[K[K[K[K[K[K[K[K[K[K[K[K[Knot_a_directory/
+not_a_directory/ -> Directory Doesn't exists...
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_2.sh not_a_directory/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KtestingFolder/
+testingFolder/ -> Files count: 6
+testingFolder/f3 -> Files count: 1
+testingFolder/f4 -> Files count: 0
+testingFolder/f5 -> Files count: 2
+testingFolder/f1 -> Files count: 0
+testingFolder/f2 -> Files count: 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ [H[2J]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ gedit 202112114_Lab2_3.sh 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat 202112114_Lab2_3.sh 
+#!/bin/bash
+
+if ! [ -d $1 ]
+then
+	echo "$1 -> Directory Doesn't exists..."
+else
+	cd $1
+
+	rm -d * 2>/dev/null
+fi
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_3.sh not_a_directory/
+not_a_directory/ -> Directory Doesn't exists...
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_3.sh not_a_directory/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat 202112114_Lab2_3.sh [2@gedi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csh 202112114_Lab2_2.sh testingFolder/
+testingFolder/ -> Files count: 6
+testingFolder/f3 -> Files count: 1
+testingFolder/f4 -> Files count: 0
+testingFolder/f5 -> Files count: 2
+testingFolder/f1 -> Files count: 0
+testingFolder/f2 -> Files count: 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_2.sh testingFolder/[K
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_2.sh testingFolder/[C[1P[1@3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_3.sh testingFolder/2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+testingFolder/ -> Files count: 6
+testingFolder/f3 -> Files count: 1
+testingFolder/f5 -> Files count: 2
+testingFolder/f2 -> Files count: 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ [H[2J]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_2.sh testingFolder/3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3.sh[Kcat 202112114_Lab2_3.sh [2@gedi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat 202112114_Lab2_3.sh 
+#!/bin/bash
+
+if ! [ -d $1 ]
+then
+	echo "$1 -> Directory Doesn't exists..."
+else
+	cd $1
+
+	rm -d * 2>/dev/null
+	
+	echo "All empty directory deleted inside -> $1 path..."
+fi
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat 202112114_Lab2_3.sh [2@gedi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csh 202112114_Lab2_2.sh testingFolder/3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3.sh[Kcat 202112114_Lab2_3.sh [2Psh 202112114_Lab2_3.sh not [K_[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat 202112114_Lab2_3.sh [2@gedi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csh 202112114_Lab2_2.sh testingFolder/3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[Knot_a_directory/
+not_a_directory/ -> Directory Doesn't exists...
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_3.sh not_a_directory/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1@cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gedi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csh 202112114_Lab2_2.sh testingFolder/
+testingFolder/ -> Files count: 6
+testingFolder/f3 -> Files count: 1
+testingFolder/f5 -> Files count: 2
+testingFolder/f2 -> Files count: 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ [H[2J]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ gedit 202112114_Lab2_3.sh 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat 202112114_Lab2_3.sh 
+#!/bin/bash
+
+if ! [ -d $1 ]
+then
+	echo "$1 -> Directory Doesn't exists..."
+else
+	cd $1
+
+	rm -d * 2>/dev/null
+	
+	echo "All empty directory deleted inside -> $1 path..."
+fi
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_3.sh not_a_directory/
+not_a_directory/ -> Directory Doesn't exists...
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_3.sh not_a_directory/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pcat 202112114_Lab2_3.sh [2@gedi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csh 202112114_Lab2_2.sh testingFolder/
+testingFolder/ -> Files count: 6
+testingFolder/f3 -> Files count: 1
+testingFolder/f4 -> Files count: 0
+testingFolder/f5 -> Files count: 2
+testingFolder/f1 -> Files count: 0
+testingFolder/f2 -> Files count: 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_2.sh testingFolder/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_2.sh testingFolder/3.sh not_a_directory/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pcat 202112114_Lab2_3.sh sh 202112114_Lab2_3.sh not_a_directory/[2P2.sh testingFolder/[1P[1@3
+All empty directory deleted inside -> testingFolder/ path...
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_3.sh testingFolder/2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+testingFolder/ -> Files count: 6
+testingFolder/f3 -> Files count: 1
+testingFolder/f5 -> Files count: 2
+testingFolder/f2 -> Files count: 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ [H[2J]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ gedit 202112114_Lab2_4.sh 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat 202112114_Lab2_4.sh 
+#!/bin/bash
+
+getunique() {
+	if ! [ -d $1 ]
+	then
+		echo "$1 -> Directory Doesn't exists..."
+	else
+		sort $1 | uniq >> unique.txt
+	fi
+}
+
+getunique $@
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ gedit file.txt 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat file.txt 
+this is 1
+this is 2
+this is 2
+this is 3
+this is 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat unique.txt
+cat: unique.txt: No such file or directory
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ [H[2J]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat unique.txt[1Pfile.txt [2@gedi[C[C[C[C[C[C[C[C[C[C[C[9@cat 202112114_Lab2_4.sh[C[9Pgedit file.txt[C[9@cat 202112114_Lab2_4.sh[C[2@gedi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat 202112114_Lab2_4.sh 
+#!/bin/bash
+
+getunique() {
+	sort $1 | uniq >> unique.txt
+
+}
+
+getunique $@
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ gedit file.txt 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat file.txt 
+this is 1
+this is 2
+this is 2
+this is 3
+this is 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat unique.txt
+cat: unique.txt: No such file or directory
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat unique.txt[K
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_4.sh file.txt 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ 
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ sh 202112114_Lab2_4.sh file.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat unique.txt[1Pfile.txt unique.txt
+this is 1
+this is 2
+this is 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ cat unique.txtsh 202112114_Lab2_4.sh file.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat unique.txt[1Pfile.txt 
+this is 1
+this is 2
+this is 2
+this is 3
+this is 3
+]0;sv4@VaRiyA: ~/assignment2[01;32msv4@VaRiyA[00m:[01;34m~/assignment2[00m$ exit
+exit
+
+Script done on 2022-02-08 20:16:06+05:30 [COMMAND_EXIT_CODE="0"]
