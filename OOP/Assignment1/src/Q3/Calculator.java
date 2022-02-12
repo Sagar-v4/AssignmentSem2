@@ -1,186 +1,202 @@
 package Q3;
 
-import java.math.BigInteger;
 import java.util.Scanner;
+import java.util.Objects;
+import java.math.BigDecimal;
 
 public class Calculator {
 
-    private long longA;
-    private long longB;
-    private double doubleA;
-    private double doubleB;
-    private final boolean[] flag = new boolean[2];
+    private long longNum = 0;
+    private double doubleA = 0;
+    private double doubleB = 0;
+    private boolean flag, calculated;
     Scanner sc = new Scanner(System.in);
 
-    Calculator() {
-        longA = longB = 0;
-        doubleA = doubleB = 0;
+    public Calculator() {
+
+        takeNumber(1);
+        calculate(true);
     }
 
-    Calculator(long a, long b){
-        longA = a;
-        longB = b;
-        doubleA = doubleB = 0;
-        flag[0] = flag[1] = true;
+    public Calculator(double a) {
+
+        this.doubleA = a;
+
+        showNumber(1);
+        calculate(true);
     }
 
-    Calculator(long a, double b){
-        longA = a;
-        longB = 0;
-        doubleA = b;
-        doubleB = 0;
-        flag[0] =  true;
-        flag[1] = false;
-    }
+    public Calculator(double a, double b) {
 
-    Calculator(double a, double b){
-        longA = longB = 0;
-        doubleA = a;
-        doubleB = b;
-        flag[0] = flag[1] = false;
-    }
+        this.doubleA = a;
+        this.doubleB = b;
 
-    Calculator(double a, long b){
-        longA = b;
-        longB = 0;
-        doubleA = a;
-        doubleB = 0;
-        flag[0] =  false;
-        flag[1] = true;
+        showNumber(1);
+        showNumber(2);
+        calculate(false);
     }
 
     void summation() {
-        if(flag[0] && flag[1]) {
-            longA += longB;
-            longB = 0;
-        } else if(!flag[0] && !flag[1]) {
-            doubleA += doubleB;
-            doubleB = 0;
-        } else {
-            doubleA += longA;
-            longA = 0;
-        }
+        this.doubleA += this.doubleB;
+        this.doubleB = 0;
     }
 
     void summation(long x) {
-        if(flag[0] && flag[1]){
-            longA += x;
-        } else {
-            doubleA += x;
-        }
+        this.doubleA += x;
     }
 
     void summation(double x) {
-        if(flag[0] && flag[1]){
-            doubleA = longA + x;
-            longA = 0;
-            flag[1] = false;
-        } else {
-            doubleA += x;
-        }
+        this.doubleA += x;
     }
 
     void subtraction() {
-        if(flag[0] && flag[1]) {
-            longA -= longB;
-            longB = 0;
-        } else if(!flag[0] && !flag[1]) {
-            doubleA -= doubleB;
-            doubleB = 0;
-        } else if(flag[0] && !flag[1]){
-            longA -= doubleA;
-            doubleA = 0;
-        } else if(!flag[0] && flag[1]){
-            doubleA -= longA;
-            longA = 0;
-        }
+        this.doubleA -= this.doubleB;
+        this.doubleB = 0;
     }
 
     void subtraction(long x) {
-        if(flag[0] && flag[1]){
-            longA -= x;
-        } else {
-            doubleA -= x;
-        }
+        this.doubleA -= x;
     }
 
     void subtraction(double x) {
-        if(flag[0] && flag[1]){
-            doubleA = longA - x;
-            longA = 0;
-            flag[1] = false;
-        } else {
-            doubleA -= x;
-        }
+        this.doubleA -= x;
     }
 
     void multiplication() {
-        if(flag[0] && flag[1]) {
-            longA *= longB;
-            longB = 0;
-        } else if(!flag[0] && !flag[1]) {
-            doubleA *= doubleB;
-            doubleB = 0;
-        } else {
-            doubleA *= longA;
-            longA = 0;
-        }
+        this.doubleA *= this.doubleB;
+        this.doubleB = 0;
     }
 
     void multiplication(long x) {
-        if(flag[0] && flag[1]){
-            longA *= x;
-        } else {
-            doubleA *= x;
-        }
+        this.doubleA *= x;
     }
 
     void multiplication(double x) {
-        if(flag[0] && flag[1]){
-            doubleA = longA * x;
-            longA = 0;
-            flag[1] = false;
-        } else {
-            doubleA *= x;
-        }
+        this.doubleA *= x;
     }
 
-    void displayIfNoConstructor() {
+    void showNumber(int n) {
+
+        long l = (n == 1) ? (long) this.doubleA : (long) this.doubleB;
+        double d = (n == 1) ? this.doubleA : this.doubleB;
+        this.flag = (l == d);
+
+        if (this.flag) System.out.println("Number " + n + ": " + l);
+        else System.out.println("Number " + n + ": " + d);
+    }
+
+    String askOperation() {
+
+        String s;
+
+        do {
+            System.out.print("Enter +, - or * (0 to exit): ");
+            s = this.sc.next();
+            s = s.trim();
+
+            if (Objects.equals(s, "0")) displayAns(true);
+
+        } while (!s.equals("+") && !s.equals("-") && !s.equals("*") && !s.equals("0"));
+
+        return s;
+    }
+
+    void takeNumber(int index) {
 
         long l;
-        double d1, d2;
-        BigInteger num;
+        double d;
+        BigDecimal num;
 
-        System.out.println("Enter number 1: ");
-        num = sc.nextBigInteger();
-
-        l = num.longValue();
-        d1 = num.doubleValue();
-
-        if(l == d1) {
-            longA = l;
-            flag[0] = true;
-        } else doubleA = d1;
-
-        System.out.println("Enter number 2: ");
-        num = sc.nextBigInteger();
+        System.out.print("Enter " + index + ((index == 1) ? "st" : "nd") + " number: ");
+        num = this.sc.nextBigDecimal();
 
         l = num.longValue();
-        d2 = num.doubleValue();
+        d = num.doubleValue();
 
-        if(l == d2 && flag[0]) {
-            longB = l;
-            flag[1] = true;
+        if (index == 1) {
+            this.doubleA = d;
         } else {
-            if(doubleA == d1) doubleB = d2;
-            else doubleA = d2;
+            this.flag = (l == d);
+            if (this.flag) this.longNum = l;
+            else this.doubleB = d;
         }
-
-        System.out.println("Which operation you want to perform: ");
-
-
-
     }
 
+    void calculate(boolean takeSecond) {
 
+        String op = askOperation();
+
+        if (!Objects.equals(op, "0")) {
+
+            this.calculated = true;
+            if (takeSecond) takeNumber(2);
+
+            if (Objects.equals(op, "+")) {
+
+                if (takeSecond) {
+                    if (this.flag) summation(this.longNum);
+                    else summation(this.doubleB);
+                } else {
+                    summation();
+                }
+                displayAns(false);
+
+            } else if (Objects.equals(op, "-")) {
+
+                if (takeSecond) {
+                    if (this.flag) subtraction(this.longNum);
+                    else subtraction(this.doubleB);
+                } else {
+                    subtraction();
+                }
+                displayAns(false);
+
+            } else if (Objects.equals(op, "*")) {
+
+                if (takeSecond) {
+                    if (this.flag) multiplication(this.longNum);
+                    else multiplication(this.doubleB);
+                } else {
+                    multiplication();
+                }
+                displayAns(false);
+
+            } else System.out.println("Invalid Operation...");
+        }
+    }
+
+    public void displayAns(boolean exit) {
+
+        if (this.calculated) {
+            long l = (long) this.doubleA;
+            double d = this.doubleA;
+            this.flag = (l == d);
+
+            if (exit) System.out.print("Final ");
+            if (this.flag) System.out.println("Answer: " + l);
+            else System.out.println("Answer: " + d);
+
+            if (!exit) calculate(true);
+
+        } else System.out.println("Exit without calculation...");
+    }
+}
+
+class Q3 {
+    public static void main(String[] args) {
+
+        System.out.println("Calling Default Constructor...");
+        Calculator calc = new Calculator();
+
+        System.out.println("\nCalling 1 parameter Constructor...");
+        Calculator calc1 = new Calculator(40);
+
+        System.out.println("\nCalling 2 parameter Constructor...");
+        Calculator calc2 = new Calculator(20.25, 70);
+
+        System.out.println("\nAll Calculator's Exit status:");
+        calc.displayAns(true);
+        calc1.displayAns(true);
+        calc2.displayAns(true);
+    }
 }

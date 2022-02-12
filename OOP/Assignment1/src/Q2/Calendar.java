@@ -6,16 +6,12 @@ public class Calendar {
 
     private final long year;
 
-    Calendar(long year) { this.year = year; }
+    public Calendar(long year) {
+        this.year = year;
+    }
 
     public boolean isLeapYear() {
-
-        if(this.year % 4 == 0)
-        {
-            if(this.year % 100 == 0) return this.year % 400 == 0;
-            else return true;
-        }
-        else return false;
+        return (this.year % 4 == 0 && (this.year % 100 != 0 || this.year % 400 == 0));
     }
 }
 
@@ -32,7 +28,7 @@ class Q2 {
 
             Calendar calender = new Calendar(year);
 
-            System.out.println(year + ((calender.isLeapYear()) ? " is " : " is Not a ") + "Leap year.\n" );
+            System.out.println(year + ((calender.isLeapYear()) ? " is " : " is Not a ") + "Leap year.\n");
         }
     }
 }
