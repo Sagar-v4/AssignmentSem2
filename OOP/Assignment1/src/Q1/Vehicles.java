@@ -1,46 +1,92 @@
+/**
+ * @author Sagar Variya | 202112114
+ */
+
 package Q1;
 
 import java.util.Scanner;
 
+/**
+ *  Vehicles class contains 4 data members (with getters & setters) that describes the price, seats, wheels and the name of the company.
+ *  it has member function that can describes the class value in formal way.
+ */
 public class Vehicles {
 
+    /**
+     *  creating 4 private data members
+     */
     private int price;
     private int no_of_seats;
     private int no_of_wheels;
     private String name_of_company;
 
+    /**
+     * this function gives the price of Vehicle class
+     * @return price of vehicle
+     */
     public int getPrice() {
         return this.price;
     }
 
+    /**
+     * this function sets the price of Vehicle class
+     * @param price price
+     */
     public void setPrice(int price) {
         this.price = price;
     }
 
+    /**
+     * this function gives the number of seats of Vehicle
+     * @return number of seats of vehicle
+     */
     public int getNo_of_seats() {
         return this.no_of_seats;
     }
 
+    /**
+     * this function sets the number of seats of Vehicle
+     * @param no_of_seats number of seats
+     */
     public void setNo_of_seats(int no_of_seats) {
         this.no_of_seats = no_of_seats;
     }
 
+    /**
+     * this function gives the number of wheels of Vehicle
+     * @return number of wheels of vehicle
+     */
     public int getNo_of_wheels() {
         return this.no_of_wheels;
     }
 
+    /**
+     * this function sets the number of wheels of Vehicle
+     * @param no_of_wheels number of wheels
+     */
     public void setNo_of_wheels(int no_of_wheels) {
         this.no_of_wheels = no_of_wheels;
     }
 
+    /**
+     * this function gives the name of the company of Vehicle
+     * @return name of the company of vehicle
+     */
     public String getName_of_company() {
         return this.name_of_company;
     }
 
+    /**
+     * this function sets the name of the company of Vehicle
+     * @param name_of_company name of the company
+     */
     public void setName_of_company(String name_of_company) {
         this.name_of_company = name_of_company;
     }
 
+    /**
+     * this function gives the description about the vehicle in formal way
+     */
     public void description() {
         System.out.println("\nThis vehicle came from " + getName_of_company() + ". "
                 + "It's " + getNo_of_wheels() + " wheeler vehicle comes with the "

@@ -1,0 +1,43 @@
+
+body {
+    background: lightgrey;
+    justify-content: center;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 40px;
+    display: block;
+    margin: 20% auto 10px;
+    text-align: center;
+}
+
+.bar {
+    background: ghostwhite;
+    border-radius: 100px;
+    height: 40px;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.load {
+    animation: load 3s normal forwards;
+    box-shadow: #fff;
+    border-radius: 100px;
+    background: lightgreen;
+    height: 40px;
+    width: 0;
+
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

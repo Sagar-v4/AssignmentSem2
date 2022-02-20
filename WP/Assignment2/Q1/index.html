@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>(WP) Assignment 2 -> Q1</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            .button {
+                height: 80px;
+                width: 150px;
+                font-weight: 700;
+                text-decoration: underline;
+                background-color: transparent;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+
+            table {
+                width: 100%;
+                font-family: sans-serif;
+                height: 25em;
+                text-align: center;
+                border: 1px Solid black;
+                border-collapse: collapse;
+            }
+
+            th {
+                background-color: darkred;
+                color: white;
+
+            }
+
+            td:nth-child(1) {
+                background-color: #d3d3d3;
+                width: 15%;
+            }
+
+            td {
+                border: 1px solid black;
+            }
+
+            fieldset {
+                border: 2px solid black;
+            }
+
+
+            .fdleft {
+                float: left;
+                margin: 2px;
+                width: calc(50% - 4px);
+            }
+
+            .fdright {
+                float: right;
+                margin: 2px;
+                width: calc(50% - 4px);
+            }
+
+            .section {
+                display: flex;
+                gap: 10px;
+            }
+
+            .section .flex1 {
+                background-color: white;
+                flex-grow: 1;
+                border: 2px black dashed;
+                padding: 8px;
+            }
+
+            .section .flex2 {
+                background-color: white;
+                flex-grow: 1;
+            }
+
+            .flex1 h1 {
+                font-family: "Comic Sans", cursive;
+                font-weight: bold;
+                margin: 0px;
+
+            }
+
+            .flex2 h1 {
+                text-align: center;
+                font-family: sans-serif;
+                font-weight: lighter;
+                margin: 26px 0px;
+            }
+
+            @media only screen and (max-width: 850px) {
+                .section {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="section">
+            <div class="flex1">
+                <form>
+                    <h1>Pizza Order Form</h1>
+
+                    <fieldset>
+                        <legend>Ordered by:</legend>
+                        <label> First Name </label>
+                        <input type="text" name="firstname" size="15" required /> <br> <br>
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="+91 9999999999" required /> <br>
+                        <br>
+
+                        <label>Delivery Options</label>
+                        <select>
+                            <option value="regular">Regular Delivery</option>
+                            <option value="pickup">Pickup</option>
+                            <option value="ubereats">Uber Eats</option>
+                        </select>
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+
+                        <legend>Pizza Order:</legend>
+                        <div class="fdleft">
+                            <fieldset>
+                                <legend><label>Size</label></legend>
+                                <input type="radio" name="size" value="small" /> Small <br>
+                                <input type="radio" name="size" value="medium" checked /> Medium <br>
+                                <input type="radio" name="size" value="large" /> Large <br>
+                            </fieldset>
+                        </div>
+                        <div class="fdright">
+                            <fieldset>
+                                <legend><label>Toppings(Choose Multiple)</label></legend>
+                                <input type="checkbox" name="topping" value="pepproni">Pepperoni<br>
+                                <input type="checkbox" name="topping" value="olives">Olives<br>
+                                <input type="checkbox" name="topping" value="mushroom">Mushroom<br>
+                                <input type="checkbox" name="topping" value="peppers">Peppers<br>
+                            </fieldset>
+                        </div>
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Please let us know if you have any allergies other consideration</legend>
+                        <textarea rows="5" placeholder="Allergies or other Notes"></textarea>
+                    </fieldset>
+
+                    <div style="text-align:center">
+                        <br>
+                        <input type="submit" class="button" value="Order Pizza" />
+                        <input type="reset" class="button" value="Clear Button" />
+                        <br>
+                    </div>
+                    <input type="hidden" id="formname" name="formname" value="Pizza Hut 2022">
+                </form>
+            </div>
+
+            <div class="flex2" id="event">
+                <h1>January Events</h1>
+                <table>
+                    <tr>
+                        <th>Location</th>
+                        <th>Morning</th>
+                        <th>Lunch</th>
+                        <th>Afternoon</th>
+                        <th>Dinner</th>
+                        <th>Evening</th>
+                    </tr>
+
+                    <tr>
+                        <td>CityCenter</td>
+                        <td rowspan="2">Flash Sale</td>
+                        <td colspan="3">School Outreach</td>
+                        <td rowspan="5">Cooking Class</td>
+                    </tr>
+
+                    <tr>
+                        <td>West End</td>
+                        <td rowspan="2">Build a Pizza</td>
+                        <td rowspan="2" colspan="2">Mascot Pictures</td>
+                    </tr>
+
+                    <tr>
+                        <td>East End</td>
+                        <td>Free Samples</td>
+                    </tr>
+
+                    <tr>
+                        <td>North End</td>
+                        <td colspan="2">Flash Sale</td>
+                        <td colspan="2">School Outreach</td>
+                    </tr>
+
+                    <tr>
+                        <td>South End</td>
+                        <td colspan="3">Surprise Coupon</td>
+                        <td>Free Samples</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+    </body>
+
+</html>

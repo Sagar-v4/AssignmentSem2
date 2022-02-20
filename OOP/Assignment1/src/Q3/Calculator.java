@@ -1,23 +1,46 @@
+/**
+ * @author Sagar Variya | 202112114
+ */
+
 package Q3;
 
 import java.util.Scanner;
 import java.util.Objects;
 import java.math.BigDecimal;
 
+/**
+ * this class has several data members and member function to perform tasks.
+ * this calculator class can calculate addition, subtraction and multiplication of integer and float numbers.
+ * it has 3 constructor with no parameter, 1 parameter and 2 parameter.
+ * it will run in a loop and ask you about input value like which operations and numbers.
+ * it can decide automatically about the number is integer or float.
+ * to exit give 0 when it asks about operations.
+ */
 public class Calculator {
 
+    /**
+     * private 5 data members
+     */
     private long longNum = 0;
     private double doubleA = 0;
     private double doubleB = 0;
     private boolean flag, calculated;
     Scanner sc = new Scanner(System.in);
 
+    /**
+     * default constructor.
+     */
     public Calculator() {
 
         takeNumber(1);
         calculate(true);
     }
 
+    /**
+     * 1 parameter constructor
+     * it will set the 1st number and ask you 2nd number
+     * @param a 1st number
+     */
     public Calculator(double a) {
 
         this.doubleA = a;
@@ -26,6 +49,12 @@ public class Calculator {
         calculate(true);
     }
 
+    /**
+     * 2 parameter constructor
+     * it will set both the numbers
+     * @param a 1st number
+     * @param b 2nd number
+     */
     public Calculator(double a, double b) {
 
         this.doubleA = a;
@@ -36,45 +65,89 @@ public class Calculator {
         calculate(false);
     }
 
+    /**
+     * default addition function
+     */
     void summation() {
         this.doubleA += this.doubleB;
         this.doubleB = 0;
     }
 
+    /**
+     * it will add 1st number and 2nd number come in the parameter
+     * overloaded addition function with the integer value as parameter
+     * @param x 2nd number integer type
+     */
     void summation(long x) {
         this.doubleA += x;
     }
 
+    /**
+     * it will add 1st number and 2nd number come in the parameter
+     * overloaded addition function with the float/decimal value as parameter
+     * @param x 2nd number float/decimal type
+     */
     void summation(double x) {
         this.doubleA += x;
     }
 
+    /**
+     * default subtraction function
+     */
     void subtraction() {
         this.doubleA -= this.doubleB;
         this.doubleB = 0;
     }
 
+    /**
+     * it will subtract 1st number and 2nd number come in the parameter
+     * overloaded addition function with the integer value as parameter
+     * @param x 2nd number integer type
+     */
     void subtraction(long x) {
         this.doubleA -= x;
     }
 
+    /**
+     * it will subtract 1st number and 2nd number come in the parameter
+     * overloaded addition function with the float/decimal value as parameter
+     * @param x 2nd number float/decimal type
+     */
     void subtraction(double x) {
         this.doubleA -= x;
     }
 
+    /**
+     * default multiplication function
+     */
     void multiplication() {
         this.doubleA *= this.doubleB;
         this.doubleB = 0;
     }
 
+    /**
+     * it will multiply 1st number and 2nd number come in the parameter
+     * overloaded addition function with the integer value as parameter
+     * @param x 2nd number integer type
+     */
     void multiplication(long x) {
         this.doubleA *= x;
     }
 
+    /**
+     * it will multiply 1st number and 2nd number come in the parameter
+     * overloaded addition function with the float/decimal value as parameter
+     * @param x 2nd number float/decimal type
+     */
     void multiplication(double x) {
         this.doubleA *= x;
     }
 
+    /**
+     * this function take 1st or 2nd number parameter (which to show e.g. 1 or 2)
+     * it will show the number according to its type (integer/float)
+     * @param n integer type index number 1 or 2
+     */
     void showNumber(int n) {
 
         long l = (n == 1) ? (long) this.doubleA : (long) this.doubleB;
@@ -85,6 +158,12 @@ public class Calculator {
         else System.out.println("Number " + n + ": " + d);
     }
 
+    /**
+     * this function ask use to insert the operation type +, -, *
+     * it will continue ask about operation if user give input is other than +, -. * or zero
+     * if you want to quite/exit then enter 0(zero)
+     * @return the operation you want to perform
+     */
     String askOperation() {
 
         String s;
@@ -101,6 +180,11 @@ public class Calculator {
         return s;
     }
 
+    /**
+     * this function will take the number value from the user to do operation
+     * it gives the flag about which type of data(integer/float) user has inserted
+     * @param index integer type to take 1st or 2nd number
+     */
     void takeNumber(int index) {
 
         long l;
@@ -122,6 +206,11 @@ public class Calculator {
         }
     }
 
+    /**
+     * this function do the main work of calculation.
+     * it will decide with operation(+, -, * or exit) to do according to flag value(integer or float)
+     * @param takeSecond boolean type if it has to take 2nd number than true else false
+     */
     void calculate(boolean takeSecond) {
 
         String op = askOperation();
@@ -165,6 +254,12 @@ public class Calculator {
         }
     }
 
+    /**
+     * this function displays the answer of the calculation
+     * if user hasn't done any calculation then it will show "Exit without calculation..."
+     * this is the only public function in the class
+     * @param exit boolean value to check if true then exit else continue
+     */
     public void displayAns(boolean exit) {
 
         if (this.calculated) {

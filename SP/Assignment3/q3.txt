@@ -1,0 +1,706 @@
+Script started on 2022-02-17 15:54:57+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="142" LINES="38"]
+]0;sv4@VaRiyA: ~/Assignment3[01;32msv4@VaRiyA[00m:[01;34m~/Assignment3[00m$ exit./q2gcc -o q2 202112114_Lab3_2.c [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./q1exitgcc -o q2 202112114_Lab3_2.c [1P[1@3[1P[1@3
+]0;sv4@VaRiyA: ~/Assignment3[01;32msv4@VaRiyA[00m:[01;34m~/Assignment3[00m$ gcc -o q3 202112114_Lab3_3.c [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./q2[K3
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 1
+
+Enter Program name: aaa
+
+Enter User executing Id: s1
+
+$->new program is added with status as submitted
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 1
+
+Enter Program name: bbb
+
+Enter User executing Id: s2
+
+$->new program is added with status as submitted
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 1
+
+Enter Program name: ccc
+
+Enter User executing Id: s3
+
+$->new program is added with status as submitted
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 1
+Program Name: aaa
+UID_Executing: s1
+Start Time: 1645093532069051
+Time Elapsed: 0
+Program Status: Submitted
+
+Program ID: 2
+Program Name: bbb
+UID_Executing: s2
+Start Time: 1645093541007111
+Time Elapsed: 0
+Program Status: Submitted
+
+Program ID: 3
+Program Name: ccc
+UID_Executing: s3
+Start Time: 1645093547598378
+Time Elapsed: 0
+Program Status: Submitted
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 2
+
+ PID's	| Program name's
+ 1	| aaa
+ 2	| bbb
+ 3	| ccc
+
+Enter program id to start: 3
+
+program id 3 is now in running stat...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 2
+
+ PID's	| Program name's
+ 1	| aaa
+ 2	| bbb
+
+Enter program id to start: 2
+
+program id 2 is now in running stat...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 3
+
+All running programs time elapsed has been updated...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 3
+
+All running programs time elapsed has been updated...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 3
+
+All running programs time elapsed has been updated...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 4
+
+ PID's	| Program name's
+ 2	| bbb
+ 3	| ccc
+
+Enter program id to finish: 3
+
+Program id 3 is now in finished stat...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 3
+
+All running programs time elapsed has been updated...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 1
+Program Name: aaa
+UID_Executing: s1
+Start Time: 1645093532069051
+Time Elapsed: 0
+Program Status: Submitted
+
+Program ID: 2
+Program Name: bbb
+UID_Executing: s2
+Start Time: 1645093541007111
+Time Elapsed: 4000000
+Program Status: Running
+
+Program ID: 3
+Program Name: ccc
+UID_Executing: s3
+Start Time: 1645093547598378
+Time Elapsed: 3000000
+Program Status: Finished
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 5
+
+All finished programs are removed...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 1
+Program Name: aaa
+UID_Executing: s1
+Start Time: 1645093532069051
+Time Elapsed: 0
+Program Status: Submitted
+
+Program ID: 2
+Program Name: bbb
+UID_Executing: s2
+Start Time: 1645093541007111
+Time Elapsed: 4000000
+Program Status: Running
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 4
+
+ PID's	| Program name's
+ 2	| bbb
+
+Enter program id to finish: 2
+
+Program id 2 is now in finished stat...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 1
+Program Name: aaa
+UID_Executing: s1
+Start Time: 1645093532069051
+Time Elapsed: 0
+Program Status: Submitted
+
+Program ID: 2
+Program Name: bbb
+UID_Executing: s2
+Start Time: 1645093541007111
+Time Elapsed: 4000000
+Program Status: Finished
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 5
+
+All finished programs are removed...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 1
+Program Name: aaa
+UID_Executing: s1
+Start Time: 1645093532069051
+Time Elapsed: 0
+Program Status: Submitted
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 1
+
+Enter Program name: eee
+
+Enter User executing Id: se r 4
+
+$->new program is added with status as submitted
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 1
+Program Name: aaa
+UID_Executing: s1
+Start Time: 1645093532069051
+Time Elapsed: 0
+Program Status: Submitted
+
+Program ID: 4
+Program Name: eee
+UID_Executing: s4
+Start Time: 1645093644315595
+Time Elapsed: 0
+Program Status: Submitted
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 2
+
+ PID's	| Program name's
+ 1	| aaa
+ 4	| eee
+
+Enter program id to start: 1
+
+program id 1 is now in running stat...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 2
+
+ PID's	| Program name's
+ 4	| eee
+
+Enter program id to start: 4
+
+program id 4 is now in running stat...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 0
+
+Invalid Choice..!!!
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 1
+Program Name: aaa
+UID_Executing: s1
+Start Time: 1645093532069051
+Time Elapsed: 0
+Program Status: Running
+
+Program ID: 4
+Program Name: eee
+UID_Executing: s4
+Start Time: 1645093644315595
+Time Elapsed: 0
+Program Status: Running
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 2 3
+
+All running programs time elapsed has been updated...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 3
+
+All running programs time elapsed has been updated...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 1
+Program Name: aaa
+UID_Executing: s1
+Start Time: 1645093532069051
+Time Elapsed: 2000000
+Program Status: Running
+
+Program ID: 4
+Program Name: eee
+UID_Executing: s4
+Start Time: 1645093644315595
+Time Elapsed: 2000000
+Program Status: Running
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 4
+
+ PID's	| Program name's
+ 1	| aaa
+ 4	| eee
+
+Enter program id to finish: 1
+
+Program id 1 is now in finished stat...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 5
+
+All finished programs are removed...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 4
+Program Name: eee
+UID_Executing: s4
+Start Time: 1645093644315595
+Time Elapsed: 2000000
+Program Status: Running
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 3
+
+All running programs time elapsed has been updated...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 4
+
+ PID's	| Program name's
+ 4	| eee
+
+Enter program id to finish: 4
+
+Program id 4 is now in finished stat...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+Program ID: 4
+Program Name: eee
+UID_Executing: s4
+Start Time: 1645093644315595
+Time Elapsed: 3000000
+Program Status: Finished
+
+Press 0 to continue: 0
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 5
+
+All finished programs are removed...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 6
+
+No Program found...
+
+----------- M E N U -----------
+1) Add New Program
+2) Start Program
+3) Update Program time
+4) Finish Program
+5) Remove All Finished Program
+6) Show All Program
+7) Exit
+-------------------------------
+
+Enter Your Choice: 7
+
+Process finished with exit code 0
+]0;sv4@VaRiyA: ~/Assignment3[01;32msv4@VaRiyA[00m:[01;34m~/Assignment3[00m$ exit
+exit
+
+Script done on 2022-02-17 15:58:36+05:30 [COMMAND_EXIT_CODE="0"]

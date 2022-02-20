@@ -1,18 +1,39 @@
+/**
+ * @author Sagar Variya | 202112114
+ */
+
 package Q6;
 
 import java.util.Scanner;
 
+/**
+ * the matrix class can take any dimension of matrix and can provide the power if it.
+ * to calculate the power of matrix it should be square like 2*2, 3*3 etc...
+ */
 public class Matrix {
+
+    /**
+     * declaring private data members
+     */
     private final int n;
     private long[][] matrixPowered;
     private long[][] identityMatrix;
     private final long[][] matrixOriginal;
 
+    /**
+     * constructor with 1 parameter
+     * it will create the size of the matrix
+     * @param n integer type to create n*n matrix
+     */
     public Matrix(int n) {
         this.matrixOriginal = new long[n][n];
         this.n = n;
     }
 
+    /**
+     * this function used to insert the matrix value.
+     * just call it, and it will ask user all the values and store it.
+     */
     public void insert() {
         Scanner sc = new Scanner(System.in);
 
@@ -25,6 +46,9 @@ public class Matrix {
         }
     }
 
+    /**
+     * this function will display original matrix user has inserted
+     */
     public void displayOriginalMatrix() {
         System.out.print("\nOriginal matrix: \n");
         for (int i = 0; i < n; i++) {
@@ -35,6 +59,11 @@ public class Matrix {
         }
     }
 
+    /**
+     * this function will handle the multiplication of the matrix
+     * it will multiply by itself or by identity according to parameter value came and also store it to accordingly.
+     * @param withIdentity boolean type if with identity then true else false
+     */
     void matrixMultiplication(final boolean withIdentity) {
         long temp, mod = Long.MAX_VALUE;
         long[][] tempMatrix = new long[n][n];
@@ -55,6 +84,13 @@ public class Matrix {
         else this.matrixPowered = tempMatrix;
     }
 
+    /**
+     * this function is used to calculate the matrix to multiply by itself or identity
+     * it will reduce the multiplication time complexity from O(n) to O(log n)
+     * to reduce time complexity this function uses identity matrix (all diagonal elements are 1).
+     * so, the multiplication with identity matrix will produce the multiply by 1 and store it in
+     * @param power integer type power of the matrix
+     */
     void calculateMatrixPower(int power) {
         this.matrixPowered = this.matrixOriginal;
         this.identityMatrix = new long[n][n];
@@ -73,6 +109,10 @@ public class Matrix {
         this.matrixPowered = this.identityMatrix;
     }
 
+    /**
+     * this function take power number of matrix then calculate and show the result
+     * @param power integer type power of the matrix
+     */
     public void displayPowerMatrix(final int power) {
         calculateMatrixPower(power);
 

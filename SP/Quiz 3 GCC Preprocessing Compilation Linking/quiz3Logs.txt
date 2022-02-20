@@ -1,0 +1,268 @@
+Script started on 2022-02-13 18:12:12+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gedit lib_d
+lib_digit.c        lib_digit.o        lib_dynamic_q1.so  
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gedit lib_d[H[2J]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gedit lib_digit.c
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat lib_digit..[Kc 
+#include <stdio.h>
+
+int is_digit(char c){
+
+	return ((c > 47 && c < 59) ? 1 : 0);
+}
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat lib_digit.c gedit lib_digit.c[1Pt.c[1Pt.c[1Pt.c[1Pt.c[1P.cp.crime..c[1Pc
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gedit lib_prime.c[1P lib_prime.c[1P lib_prime.c[1P lib_prime.c[1P lib_prime.c[1P lib_prime.cc lib_prime.ca lib_prime.ct lib_prime.c
+#include <stdio.h>
+
+int is_prime(int no) {
+
+	if (no == 1) return 0;
+
+	for (int i = 2; i * i <= no; i++)
+		if (!(no % i)) return 0;
+
+	return 1;
+}
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat lib_prime.c[2@gedi[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.c[1P.c[1P.c[1P.c[1P.c[1P.c[1P.c[1P.c[1P.cm.ca.ci.cn.c
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat main.[K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat main.[K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat main.
+cat: main.: No such file or directory
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat main.c
+#include <stdio.h>
+#include "/home/sv4/Quiz_3/proj/include/q1.h"
+#include "q1.h"
+
+int main() {
+
+	char c;
+	int no, ans;
+	
+	printf("\nEnter character to check it is digit or not: ");
+	scanf("%c", &c);
+	getchar();
+	
+	ans = is_digit(c);
+	
+	if(ans == 1) printf("%c is a digit...\n", c);
+	else printf("%c is not a digit...\n", c);
+
+	printf("\nEnter number to check it is prime or not: ");
+	scanf("%d", &no);
+	getchar();
+	
+	ans = is_prime(no);
+	
+	if(ans == 1) printf("%d is a prime number...\n\n", no);
+	else printf("%d is not a prime number...\n\n", no);
+	
+	return 0;
+}
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gcc -c *.c -o[Kfpic
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gedit q1.h 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat q1.h 
+int is_digit(char c);
+int is_prime(int no);
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ ar rcs lib[K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ ar rcs lib[K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ ar rcs lib_static_q1.a lib_digit.o lib_prime.o
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gcc -o main_static_q2 main.o -L. lib_static_q1.a 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ ./main_static_q2 
+
+Enter character to check it is digit or not: g
+g is not a digit...
+
+Enter number to check it is prime or not: 5
+5 is a prime number...
+
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ ./main_static_q2 
+
+Enter character to check it is digit or not: 4
+4 is a digit...
+
+Enter number to check it is prime or not: 25
+25 is not a prime number...
+
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [K]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gcc lib_prime.o lib_digit.o -o lib[K[K[Klib_dynamic_q1.so
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gcc lib_prime.o lib_digit.o -o lib_dynamic_q1.so
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gcc lib_prime.o lib_digit.o -o lib_dynamic_q1.so
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gcc lib_prime.o lib_digit.o -o lib_dynamic_q1.so[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[1@l[1@i[1@b[1@_[1@p[1@r[4@ime.[1@o[1@ [1P[1@-[C[1@ [1@-[1@s[1@h[1@a[1@r[1@e[1@d
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gcc -o main)[K_dynamic_q3 main.o -L. lib_dynamic_q1.so 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ ./main_dynamic_q3 
+./main_dynamic_q3: error while loading shared libraries: lib_dynamic_q1.so: cannot open shared object file: No such file or directory
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ export [K[K[K[K[K[K[Ksudo export LD_LIBRARY_PATH=:/home/srv[K[Kv4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpwd
+/home/sv4/Quiz_3
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ export [K[K[K[K[K[K[Ksudo export LD_LIBRARY_PATH=:/home/sv4/Quiz_3
+[sudo] password for sv4: 
+sudo: export: command not found
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ sudo export LD_LIBRARY_PATH=:/home/sv4/Quiz_3
+sudo: export: command not found
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ sudo export LD_LIBRARY_PATH=:/home/sv4/Quiz_3[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ ./main_dynamic_q3 
+
+Enter character to check it is digit or not: 4
+4 is a digit...
+
+Enter number to check it is prime or not: 52
+52 is not a prime number...
+
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ ./main_dynamic_q3 
+
+Enter character to check it is digit or not: df 
+d is not a digit...
+
+Enter number to check it is prime or not: 73
+73 is a prime number...
+
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gedit Makefile
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat Makefile 
+$(CC) = gcc
+$home = /home/sv4/Quiz_3/
+$PROJ = proj/
+$SRC = /home/sv4/Quiz_3/proj/src
+$OBJ = proj/src/obj
+$INC = proj/include
+$LIB = proj/lib
+$BIN = proj/bin
+
+makeProj:
+	mkdir proj/ proj/src proj/src/obj proj/include proj/lib proj//bin
+	cp *.c proj/src/
+	cp *.h proj/include/
+	cp Makefile proj/src/
+	cd proj/src/obj/
+	gcc -c /home/sv4/Quiz_3/proj/src/main.c -o /home/sv4/Quiz_3/proj/src/obj/main.o
+	gcc -c /home/sv4/Quiz_3/proj/src/lib_digit.c -o /home/sv4/Quiz_3/proj/src/obj/lib_digit.o
+	gcc -c /home/sv4/Quiz_3/proj/src/lib_prime.c -o /home/sv4/Quiz_3/proj/src/obj/lib_prime.o
+	cd ../../..
+	cd proj/lib/
+	ar rcs /home/sv4/Quiz_3/proj/lib/lib_static_q1.a /home/sv4/Quiz_3/proj/src/obj/lib_prime.o /home/sv4/Quiz_3/proj/src/obj/lib_digit.o
+	gcc /home/sv4/Quiz_3/proj/src/obj/lib_prime.o /home/sv4/Quiz_3/proj/src/obj/lib_digit.o -shared -o /home/sv4/Quiz_3/proj/lib/lib_dynamic_q1.so
+	cd ../..
+	cd proj/bin/
+	gcc -o /home/sv4/Quiz_3/proj/bin/main_static_q2 /home/sv4/Quiz_3/proj/src/obj/main.o -L. lib_static_q1.a
+	gcc -o /home/sv4/Quiz_3/proj/bin/main_dynamic_q3 /home/sv4/Quiz_3/proj/src/obj/main.o -L. lib_dynamic_q1.so
+	export LD_LIBRARY_PATH=:/home/sv4/Quiz_3/proj/bin
+
+Q2:
+	proj/bin/main_static_q2
+
+Q3:
+	proj/bin/main_dynamic_q3
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ make makeProj
+mkdir proj/ proj/src proj/src/obj proj/include proj/lib proj//bin
+cp *.c proj/src/
+cp *.h proj/include/
+cp Makefile proj/src/
+cd proj/src/obj/
+gcc -c /home/sv4/Quiz_3/proj/src/main.c -o /home/sv4/Quiz_3/proj/src/obj/main.o
+[01m[K/home/sv4/Quiz_3/proj/src/main.c:3:10:[m[K [01;31m[Kfatal error: [m[Kq1.h: No such file or directory
+    3 | #include [01;31m[K"q1.h"[m[K
+      |          [01;31m[K^~~~~~[m[K
+compilation terminated.
+make: *** [Makefile:16: makeProj] Error 1
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ make makeProjcat Makefile gedit Makefile
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gedit Makefile[1Pmake makeProjcat Makefile 
+$(CC) = gcc
+$home = /home/sv4/Quiz_3/
+$PROJ = proj/
+$SRC = /home/sv4/Quiz_3/proj/src
+$OBJ = proj/src/obj
+$INC = proj/include
+$LIB = proj/lib
+$BIN = proj/bin
+
+makeProj:
+	mkdir proj/ proj/src proj/src/obj proj/include proj/lib proj//bin
+	cp *.c proj/src/
+	cp *.h proj/include/
+	cp Makefile proj/src/
+	cd proj/src/obj/
+	gcc -c /home/sv4/Quiz_3/proj/src/main.c -o /home/sv4/Quiz_3/proj/src/obj/main.o
+	gcc -c /home/sv4/Quiz_3/proj/src/lib_digit.c -o /home/sv4/Quiz_3/proj/src/obj/lib_digit.o
+	gcc -c /home/sv4/Quiz_3/proj/src/lib_prime.c -o /home/sv4/Quiz_3/proj/src/obj/lib_prime.o
+	cd ../../..
+	cd proj/lib/
+	ar rcs /home/sv4/Quiz_3/proj/lib/lib_static_q1.a /home/sv4/Quiz_3/proj/src/obj/lib_prime.o /home/sv4/Quiz_3/proj/src/obj/lib_digit.o
+	gcc /home/sv4/Quiz_3/proj/src/obj/lib_prime.o /home/sv4/Quiz_3/proj/src/obj/lib_digit.o -shared -o /home/sv4/Quiz_3/proj/lib/lib_dynamic_q1.so
+	cd ../..
+	cd proj/bin/
+	gcc -o /home/sv4/Quiz_3/proj/bin/main_static_q2 /home/sv4/Quiz_3/proj/src/obj/main.o -L. lib_static_q1.a
+	gcc -o /home/sv4/Quiz_3/proj/bin/main_dynamic_q3 /home/sv4/Quiz_3/proj/src/obj/main.o -L. lib_dynamic_q1.so
+	export LD_LIBRARY_PATH=:/home/sv4/Quiz_3/proj/bin
+
+Q2:
+	proj/bin/main_static_q2
+
+Q3:
+	proj/bin/main_dynamic_q3
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ 
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ cat Makefile gedit Makefile[1Pmake makeProj
+mkdir proj/ proj/src proj/src/obj proj/include proj/lib proj//bin
+mkdir: cannot create directory ‘proj/’: File exists
+mkdir: cannot create directory ‘proj/src’: File exists
+mkdir: cannot create directory ‘proj/src/obj’: File exists
+mkdir: cannot create directory ‘proj/include’: File exists
+mkdir: cannot create directory ‘proj/lib’: File exists
+mkdir: cannot create directory ‘proj//bin’: File exists
+make: *** [Makefile:11: makeProj] Error 1
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ [H[2J]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ make makeProjcat Makefile gedit Makefile
+]0;sv4@VaRiyA: ~/Quiz_3[01;32msv4@VaRiyA[00m:[01;34m~/Quiz_3[00m$ gedit Makefile[1Pmake makeProjcat Makefile 
+$(CC) = gcc
+$home = /home/sv4/Quiz_3/
+$PROJ = proj/
+$SRC = /home/sv4/Quiz_3/proj/src
+$OBJ = proj/src/obj
+$INC = proj/include
+$LIB = proj/lib
+$BIN = proj/bin
+
+makeProj:
+	mkdir proj/ proj/src proj/src/obj proj/include proj/lib proj//bin
+	cp *.c proj/src/
+	cp *.h proj/include/
+	cp Makefile proj/src/
+	cd proj/s

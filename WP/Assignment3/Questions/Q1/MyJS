@@ -1,0 +1,44 @@
+/* 
+ * Assignment 3 {your name}.
+ */
+"use strict";
+
+var welcome = document.getElementById("welcome");
+var hello = document.getElementById("hello");
+
+function nameChanged() {
+    var fname = document.forms["names"]["firstname"].value;
+    var lname = document.forms["names"]["lastname"].value;
+    var name;
+
+    if(fname.length == 0) {
+        if(lname.length == 0){
+            name = "{name}";
+        }
+        else {
+            name = lname;
+        }
+    }
+    else {
+        if(lname.length == 0) {
+            name = fname;
+        }
+        else {
+            name = fname + " " + lname;
+        }
+    }
+
+    hello.innerHTML = "Hello, "+name+"!";
+    return false;
+}
+
+function alignmentChanged() {
+    // add you javascript code here
+}
+
+
+function sizeChanged() {
+   // add you javascript code here 
+}
+
+

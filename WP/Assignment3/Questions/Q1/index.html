@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+{add your name here}
+-->
+<html> 
+    <head>
+        <title>Assignment 3</title>
+        <link href="Mycss.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="controls">
+				<form name="names" onchange="nameChanged()">
+                        <label>First name: <input type="text" name="firstname" size="15"></label><br>
+                        <label>Last name: <input type="text" name="lastname" size="15"></label>
+                    </form>
+				
+                    Add your remaining form input fields here.
+                </td>
+                <td id="target">
+                    <div id="hello">Hello, {name}!</div>
+                    <div id="welcome">Welcome to Web Programming Lab!</div>
+                </td>
+            </tr>
+        </table>
+        <script src="MyJS.js" type="text/javascript"></script>
+    </body>
+</html>

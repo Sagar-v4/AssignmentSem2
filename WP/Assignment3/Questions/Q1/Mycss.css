@@ -1,0 +1,23 @@
+/* 
+    Created on : Fab 10, 2021, 09:20:28 PM
+    Author     : Satyendra Singh Chouhan
+*/
+#target {
+    border: 1px solid;
+    width:150px;
+    height:150px;
+}
+
+table, td {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    background-color:#ffffff;
+    border: 1px solid;
+    padding:5px;
+}
+
+
+
+body{
+    background-color:#cccccc;
+}

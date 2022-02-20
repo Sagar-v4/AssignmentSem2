@@ -1,0 +1,36 @@
+
+body {
+    background-color: rgb(240, 240, 240);
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(140, 231, 140);
+}
+
+nav .nav-1,
+nav .nav-2,
+nav .nav-3 {
+    flex-grow: 1;
+}
+
+td{
+    border: 1px solid;
+}
+
+.container {
+    display: flex;
+    position: none;
+}
+
+.board {
+    width: 400px;
+    height: 400px;
+    min-width: 250px;
+    min-height: 250px;
+    border-collapse: collapse;
+
+
+}

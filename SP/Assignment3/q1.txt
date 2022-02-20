@@ -1,0 +1,67 @@
+Script started on 2022-02-17 14:31:03+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="142" LINES="38"]
+]0;sv4@VaRiyA: ~/Assignment3[01;32msv4@VaRiyA[00m:[01;34m~/Assignment3[00m$ ./q1gcc -o q1 202112114_Lab3_1.c 
+]0;sv4@VaRiyA: ~/Assignment3[01;32msv4@VaRiyA[00m:[01;34m~/Assignment3[00m$ gcc -o q1 202112114_Lab3_1.c [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./q1[K
+
+--- MENU ---
+1) Fibonacci
+2) Factorial
+3) length
+0) Exit
+------------
+
+Enter Your Choice: 1
+
+Enter the number: 5
+
+Answer: 5
+
+--- MENU ---
+1) Fibonacci
+2) Factorial
+3) length
+0) Exit
+------------
+
+Enter Your Choice: 2
+
+Enter the number: 5
+
+Answer: 120
+
+--- MENU ---
+1) Fibonacci
+2) Factorial
+3) length
+0) Exit
+------------
+
+Enter Your Choice: 3
+
+Enter the number: 56
+
+Answer: 2
+
+--- MENU ---
+1) Fibonacci
+2) Factorial
+3) length
+0) Exit
+------------
+
+Enter Your Choice: 4
+
+Invalid Choice..!!!
+
+--- MENU ---
+1) Fibonacci
+2) Factorial
+3) length
+0) Exit
+------------
+
+Enter Your Choice: 0
+Process finished with exit code 0
+]0;sv4@VaRiyA: ~/Assignment3[01;32msv4@VaRiyA[00m:[01;34m~/Assignment3[00m$ exit
+exit
+
+Script done on 2022-02-17 14:31:52+05:30 [COMMAND_EXIT_CODE="0"]
