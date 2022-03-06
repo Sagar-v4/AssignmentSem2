@@ -1,0 +1,33 @@
+sv4@VaRiyA:~/Assignment4$ gcc -fpic -c 202112114_Lab4_1_fact.c 202112114_Lab4_1_pow.c
+sv4@VaRiyA:~/Assignment4$ gcc -shared 202112114_Lab4_1_pow.o 202112114_Lab4_1_fact.o -o lib_dynamic.so 
+sv4@VaRiyA:~/Assignment4$ gcc -c 202112114_Lab4_1_main.c
+sv4@VaRiyA:~/Assignment4$ gcc -o main_dynamic.out 202112114_Lab4_1_main.o lib_dynamic.so 
+sv4@VaRiyA:~/Assignment4$ ./main_dynamic.out 
+./main_dynamic.out: error while loading shared libraries: lib_dynamic.so: cannot open shared object file: No such file or directory
+sv4@VaRiyA:~/Assignment4$ export LD_LIBRARY_PATH=.
+sv4@VaRiyA:~/Assignment4$ ./main_dynamic.out 
+Enter Degree: 45
+Enter n: 10
+
+Ans: 0.79
+sv4@VaRiyA:~/Assignment4$ cd /etc/ld.so.conf.d/
+sv4@VaRiyA:/etc/ld.so.conf.d$ sudo gedit mylib.config 
+[sudo] password for sv4: 
+
+(gedit:5764): Tepl-WARNING **: 15:06:46.586: GVfs metadata is not supported. Fallback to TeplMetadataManager. Either GVfs is not correctly installed or GVfs metadata are not supported on this platform. In the latter case, you should configure Tepl with --disable-gvfs-metadata.
+sv4@VaRiyA:/etc/ld.so.conf.d$ ls -l
+total 16
+-rw-r--r-- 1 root root  38 Sep  7  2019 fakeroot-x86_64-linux-gnu.conf
+-rw-r--r-- 1 root root  44 Apr 15  2020 libc.conf
+-rw-r--r-- 1 root root  23 Feb 24 15:06 mylib.config
+-rw-r--r-- 1 root root 100 Apr 15  2020 x86_64-linux-gnu.conf
+sv4@VaRiyA:/etc/ld.so.conf.d$ sudo ldconfig
+sv4@VaRiyA:/etc/ld.so.conf.d$ cd /home/sv4/Assignment4/
+sv4@VaRiyA:~/Assignment4$ ./main_dynamic.out 
+Enter Degree: 45
+Enter n: 10
+
+Ans: 0.79
+sv4@VaRiyA:~/Assignment4$ 
+
+

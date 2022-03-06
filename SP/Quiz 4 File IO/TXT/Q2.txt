@@ -1,0 +1,27 @@
+sv4@VaRiyA:~/Quiz4/Q1$ cd ..
+sv4@VaRiyA:~/Quiz4$ ./Q2_tree.out 
+.
+|-- 05 Systems Software Programming-FileIO_Quiz.pdf
+|-- Q1
+   |-- 1_Oservation.txt
+   |-- Q1_hardLink.c
+   |-- Q1_hardLink.out
+   |-- Q1_iNode_info.c.c
+   |-- Q1_iNode_info.c.out
+   |-- Q1_softLink.c
+   |-- Q1_softLink.out
+   |-- abc.txt
+   |-- hardLinkExample
+   `-- softLinkExample
+|-- Q2_tree.c
+|-- Q2_tree.out
+|-- Q_3.pdf
+|-- SS
+   `-- Q1.png
+`-- TXT
+   |-- Q1..txt
+   `-- Q2.txt
+
+3 directories, 16 files
+sv4@VaRiyA:~/Quiz4$ 
+

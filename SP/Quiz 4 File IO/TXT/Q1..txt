@@ -1,0 +1,13 @@
+sv4@VaRiyA:~/Quiz4/Q1$ ./Q1_hardLink.out abc.txt hardLinkExample
+Hardlink created...
+sv4@VaRiyA:~/Quiz4/Q1$ ./Q1_softLink.out abc.txt softLinkExample
+Softlink created...
+sv4@VaRiyA:~/Quiz4/Q1$ ./Q1_iNode_info.c.out abc.txt hardLinkExample softLinkExample 
+iNode number of file abc.txt is: 1180917
+iNode number of file hardLinkExample is: 1180917
+iNode number of file softLinkExample is: 1180761
+sv4@VaRiyA:~/Quiz4/Q1$ ^C
+sv4@VaRiyA:~/Quiz4/Q1$ ^C
+sv4@VaRiyA:~/Quiz4/Q1$ 
+
+

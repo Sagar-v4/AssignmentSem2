@@ -1,0 +1,16 @@
+sv4@VaRiyA:~/Assignment4$ make all
+Makefile:45: warning: overriding recipe for target '202112114_Lab4_1_pow.o'
+Makefile:21: warning: ignoring old recipe for target '202112114_Lab4_1_pow.o'
+Makefile:48: warning: overriding recipe for target '202112114_Lab4_1_fact.o'
+Makefile:24: warning: ignoring old recipe for target '202112114_Lab4_1_fact.o'
+Makefile:54: warning: overriding recipe for target '202112114_Lab4_1_main.o'
+Makefile:27: warning: ignoring old recipe for target '202112114_Lab4_1_main.o'
+ar rs -o Q4_lib_static.a 202112114_Lab4_1_fact.o 202112114_Lab4_1_pow.o
+ar: creating Q4_lib_static.a
+gcc -o 202112114_Lab4_1_main_q4_static.out 202112114_Lab4_1_main.o Q4_lib_static.a -I . -lm Q4_lib_static.a
+gcc -o 202112114_Lab4_1_main_q4_static_withl.out 202112114_Lab4_1_main.o Q4_lib_static.a -I . -L -lstatic
+gcc -shared -o Q4_lib_dynamic.so 202112114_Lab4_1_fact.o 202112114_Lab4_1_pow.o
+gcc -o 202112114_Lab4_1_main_q4_dynamic.out 202112114_Lab4_1_main.o Q4_lib_dynamic.so -I . -lm Q4_lib_dynamic.so
+gcc -o 202112114_Lab4_1_main_q4_dynamic_withl.out 202112114_Lab4_1_main.o Q4_lib_dynamic.so -I . -L -ldynamic
+gcc -o 202112114_Lab4_1_main_q4_q1.out 202112114_Lab4_1_main.o 202112114_Lab4_1_fact.o 202112114_Lab4_1_pow.o -I .
+sv4@VaRiyA:~/Assignment4$ 

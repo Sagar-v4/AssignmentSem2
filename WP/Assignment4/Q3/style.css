@@ -1,0 +1,30 @@
+body {
+  background-color: lightgrey;
+}
+
+.option {
+  margin: 20px;
+  display: inline;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+hr{
+  padding: 2px;
+  background-color: black;
+}
+
+#runner {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: rgb(0,0,0,.5);
+  margin: 10px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+   
+

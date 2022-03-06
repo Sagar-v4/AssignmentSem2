@@ -1,0 +1,8 @@
+sv4@VaRiyA:~/Assignment4$ gcc -c 202112114_Lab4_1_main.c 202112114_Lab4_1_fact.c 202112114_Lab4_1_pow.c  -I .
+sv4@VaRiyA:~/Assignment4$ gcc -o 202112114_Lab4_1_main.out 202112114_Lab4_1_main.o 202112114_Lab4_1_fact.o 202112114_Lab4_1_pow.o
+sv4@VaRiyA:~/Assignment4$ ./202112114_Lab4_1_main.out 
+Enter Degree: 45
+Enter n: 10
+
+Ans: 0.79
+sv4@VaRiyA:~/Assignment4$

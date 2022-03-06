@@ -1,0 +1,30 @@
+
+body {
+    background-color: white;
+}
+
+#bln {
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#wrap {
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+#wrap p {
+    margin: 0px;
+    font-size: 20px;
+    position: absolute;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+}

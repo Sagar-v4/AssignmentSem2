@@ -1,0 +1,11 @@
+sv4@VaRiyA:~/Assignment5$ ./202112114_Lab5_3.out 
+Enter File name/path : mydir_new/xyz.txt
+
+inode of original file : 1180570
+inode of hard link : 1180570
+inode of soft link : 1180524
+
+Here we can see that inode of hard links is same as the inode of original file 
+But the inode of the soft link is different than the original file.
+sv4@VaRiyA:~/Assignment5$ 
+

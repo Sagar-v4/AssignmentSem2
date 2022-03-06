@@ -65,7 +65,7 @@ public class Matrix {
      * @param withIdentity boolean type if with identity then true else false
      */
     void matrixMultiplication(final boolean withIdentity) {
-        long temp, mod = Long.MAX_VALUE;
+        long temp, mod = Integer.MAX_VALUE;
         long[][] tempMatrix = new long[n][n];
 
         for (int i = 0; i < n; i++) {
@@ -91,6 +91,8 @@ public class Matrix {
      * so, the multiplication with identity matrix will produce the multiply by 1 and store it in
      * @param power integer type power of the matrix
      */
+
+    // 16 * 16 * 2 * 2
     void calculateMatrixPower(int power) {
         this.matrixPowered = this.matrixOriginal;
         this.identityMatrix = new long[n][n];
@@ -142,7 +144,13 @@ class Q6 {
         int p = sc.nextInt();
 
         matrix.displayOriginalMatrix();
-        matrix.displayPowerMatrix(p);
+
+//        matrix.displayPowerMatrix(p);
+
+        /* */
+        for(int i =0; i <= p; i++)
+            matrix.displayPowerMatrix(i);
+        /* */
 
     }
 }

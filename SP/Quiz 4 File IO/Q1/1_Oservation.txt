@@ -1,0 +1,2 @@
+Considering the inode number, i observed that the inode number of both the original file  abd  hard links was the same: 1180917
+But the inode number of both the Symbolic links were different which was 1180917 and 1180761

@@ -1,0 +1,18 @@
+sv4@VaRiyA:~/Assignment5$ ./202112114_Lab5_2.out 
+
+myshell@sv4@VaRiyA$ cat mydir/abc.txt
+this is abc.txt
+
+myshell@sv4@VaRiyA$ ls mydir
+mydir/:
+abc.txt  .  ..  def1.txt  
+myshell@sv4@VaRiyA$ mv /home/sv4/Assignment5/mydir/abc.txt /home/sv4/Assignment5/mydir_new/xyz.txt
+
+myshell@sv4@VaRiyA$ ls mydir
+mydir/:
+.  ..  def1.txt  
+myshell@sv4@VaRiyA$ ls mydir_new
+mydir_new/:
+.  xyz.txt  abc3.txt  ..  def2.txt  
+myshell@sv4@VaRiyA$ exit
+sv4@VaRiyA:~/Assignment5$ 

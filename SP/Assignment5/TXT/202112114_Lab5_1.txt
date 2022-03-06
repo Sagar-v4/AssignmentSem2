@@ -1,0 +1,34 @@
+sv4@VaRiyA:~/Assignment5$ ./202112114_Lab5_1.out 
+
+Enter command: cat mydir/abc.txt
+this is abc.txt
+
+sv4@VaRiyA:~/Assignment5$ ./202112114_Lab5_1.out 
+
+Enter command: ls mydir
+mydir/:
+abc2.txt  abc.txt  .  abc3.txt  ..  abc1.txt  
+sv4@VaRiyA:~/Assignment5$ 
+sv4@VaRiyA:~/Assignment5$ ./202112114_Lab5_1.out 
+
+Enter command: mv /home/sv4/Assignment5/mydir/abc1.txt /home/sv4/Assignment5/mydir/def1.txt    
+
+sv4@VaRiyA:~/Assignment5$ ./202112114_Lab5_1.out 
+
+Enter command: mv /home/sv4/Assignment5/mydir/abc2.txt /home/sv4/Assignment5/mydir_new/def2.txt
+
+sv4@VaRiyA:~/Assignment5$ ./202112114_Lab5_1.out 
+
+Enter command: mv /home/sv4/Assignment5/mydir/abc3.txt /home/sv4/Assignment5/mydir_new/abc3.txt
+
+sv4@VaRiyA:~/Assignment5$ ./202112114_Lab5_1.out 
+
+Enter command: ls mydir
+mydir/:
+abc.txt  .  ..  def1.txt  
+sv4@VaRiyA:~/Assignment5$ ./202112114_Lab5_1.out 
+
+Enter command: ls mydir_new
+mydir_new/:
+.  abc3.txt  ..  def2.txt  
+sv4@VaRiyA:~/Assignment5$

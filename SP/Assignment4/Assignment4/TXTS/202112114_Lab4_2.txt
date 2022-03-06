@@ -1,0 +1,20 @@
+sv4@VaRiyA:~/Assignment4$ gcc -c 202112114_Lab4_1_fact.c 202112114_Lab4_1_pow.c
+sv4@VaRiyA:~/Assignment4$ ar rs lib_static.a 202112114_Lab4_1_fact.o 202112114_Lab4_1_pow.o
+ar: creating lib_static.a
+sv4@VaRiyA:~/Assignment4$ gcc -c 202112114_Lab4_1_main.c
+sv4@VaRiyA:~/Assignment4$ gcc -o main_static.out 202112114_Lab4_1_main.o lib_static.a 
+sv4@VaRiyA:~/Assignment4$ ./main_static.out 
+Enter Degree: 45
+Enter n: 10
+
+Ans: 0.79
+sv4@VaRiyA:~/Assignment4$ gcc -c 202112114_Lab4_1_fact.c 202112114_Lab4_1_pow.c -I .
+sv4@VaRiyA:~/Assignment4$ ar rs lib_static.a 202112114_Lab4_1_fact.o 202112114_Lab4_1_pow.o
+sv4@VaRiyA:~/Assignment4$ gcc -c 202112114_Lab4_1_main.c
+sv4@VaRiyA:~/Assignment4$ gcc -o main_static.out 202112114_Lab4_1_main.o -L. -l_static
+sv4@VaRiyA:~/Assignment4$ ./main_static.out 
+Enter Degree: 45
+Enter n: 10
+
+Ans: 0.79
+sv4@VaRiyA:~/Assignment4$ 
